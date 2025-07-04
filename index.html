@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit Zone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <img src="Images/logo.png" alt="Logo Fit Zone" class="logo-img">
+  </header>
+
+  <!-- Menu lateral com botão X (Font Awesome) -->
+  <nav class="off-screen-menu">
+    <button class="close-menu-btn"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#home">🏠 Início</a></li>
+      <li><a href="#sobre">💪 Sobre</a></li>
+      <li><a href="#planos">📋 Planos</a></li>
+      <li><a href="#imc">📊 IMC</a></li>
+      <li><a href="#login">🔐 Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Corpo Principal -->
+  <main>
+    <section id="home" class="section active">
+      <h2>Fit Shape - O ginásio perto de si!</h2>
+      <video controls autoplay muted loop>
+        <source src="Video/video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </section>
+
+<section id="sobre" class="section">
+  <h2>Sobre Nós</h2>
+  <div class="sobre-container">
+    <div class="sobre-content">
+      <div class="sobre-text">
+        <h3>Fit Shape - O ginásio perto de si!</h3>
+        <p>Fundado em 2025, o Fit Shape tornou-se referência em excelência fitness, oferecendo equipamentos de última geração e programas personalizados para todos os níveis e necessidades dos seus clientes.</p>
+        
+        <div class="sobre-destaques">
+          <div class="destaque-item">
+            <i class="fas fa-dumbbell"></i>
+            <h4>+100 Aparelhos</h4>
+            <p>Equipamentos modernos e diversificados</p>
+          </div>
+          <div class="destaque-item">
+            <i class="fas fa-users"></i>
+            <h4>+5.000 Membros</h4>
+            <p>Comunidade ativa e acolhedora</p>
+          </div>
+          <div class="destaque-item">
+            <i class="fas fa-award"></i>
+            <h4>Prêmios</h4>
+            <p>Melhor Academia 2023/2024</p>
+          </div>
+        </div>
+        
+        <p>Temos como objetivo ajudar a mudar vidas, como profissionais e num ambiente acolhedor que inspira resultados extraordinários!</p>
+      </div>
+      
+      <div class="sobre-imagem">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Academia Fit Zone">
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="planos" class="section">
+  <h2>Nossos Planos</h2>
+  <div class="planos-container">
+    <div class="plano-card basico">
+      <h3>Básico</h3>
+      <div class="preco">€29,90<span>/mês</span></div>
+      <ul class="beneficios">
+        <li><i class="fas fa-check"></i> Acesso ao ginásio</li>
+        <li><i class="fas fa-check"></i> Qualquer horário</li>
+        <li><i class="fas fa-check"></i> Aulas coletivas</li>
+        <li><i class="fas fa-times"></i> Personal trainer</li>
+        <li><i class="fas fa-times"></i> Área VIP</li>
+      </ul>
+      <button class="plano-btn">Assinar</button>
+    </div>
+
+    <div class="plano-card premium popular">
+      <div class="destaque">Mais Popular</div>
+      <h3>Premium</h3>
+      <div class="preco">€49,90<span>/mês</span></div>
+      <ul class="beneficios">
+        <li><i class="fas fa-check"></i> Acesso ilimitado</li>
+        <li><i class="fas fa-check"></i> Aulas coletivas</li>
+        <li><i class="fas fa-check"></i> Personal Trainer (1/s) </li>
+        <li><i class="fas fa-check"></i> Zona VIP</li>
+        <li><i class="fas fa-times"></i> Nutricionista</li>
+      </ul>
+      <button class="plano-btn">Assinar</button>
+    </div>
+
+    <div class="plano-card completo">
+      <h3>Completo</h3>
+      <div class="preco">€79,90<span>/mês</span></div>
+      <ul class="beneficios">
+        <li><i class="fas fa-check"></i> Acesso 24/7</li>
+        <li><i class="fas fa-check"></i> Aulas coletivas</li>
+        <li><i class="fas fa-check"></i> Personal Trainer</li>
+        <li><i class="fas fa-check"></i> Zona VIP </li>
+        <li><i class="fas fa-check"></i> Nutricionista</li>
+      </ul>
+      <button class="plano-btn">Assinar</button>
+    </div>
+  </div>
+  
+  <div class="planos-info">
+    <p>Todos os planos incluem: Wi-Fi gratuito, Toalhas e Estacionamento</p>
+    <p>Sem taxa de cancelamento - Pause quando quiser</p>
+  </div>
+</section>
+
+    <section id="imc" class="section">
+      <h2>Calculadora IMC</h2>
+      <div class="imc-container">
+        <div class="imc-calculator">
+          <div class="form-group">
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" placeholder="Ex: 175">
+            </div>
+              <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" placeholder="Ex: 70">
+              </div>
+              <button id="calcular-imc" class="login-btn">Calcular IMC <i class="fas fa-calculator"></i></button>
+              <div id="resultado-imc" class="imc-resultado">
+                <div id="valor-imc">O seu IMC: --</div>
+                  <div id="classificacao">Classificação: --</div>
+                  <div id="tabela-imc" class="tabela-imc">
+                    <h3>Tabela de Valores:</h3>
+                    <table>
+                      <tr><th>IMC</th><th>Valores</th></tr>
+                      <tr><td>Abaixo de 18,5</td><td>Abaixo do peso</td></tr>
+                      <tr><td>18,5 - 24,9</td><td>Peso normal</td></tr>
+                      <tr><td>25 - 29,9</td><td>Acima do Peso</td></tr>
+                      <tr><td>30 - 34,9</td><td>Obesidade Grau I</td></tr>
+                      <tr><td>35 - 39,9</td><td>Obesidade Grau II</td></tr>
+                      <tr><td>Acima de 40</td><td>Obesidade Grau III</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+<section id="login" class="section">
+  <h2>Login</h2>
+  <div class="login-container">
+    <form class="login-form">
+      <div class="form-group">
+        <label for="username">Email ou Nome de Utilizador</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="login-btn">Entrar <i class="fas fa-sign-in-alt"></i></button>
+      <div class="login-links">
+        <a href="#recuperar-password">Esqueceu a password?</a>
+        <a href="#registar">Criar nova conta</a>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="mailto:dinisteles2008@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Fit Zone</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
